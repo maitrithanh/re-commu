@@ -27,9 +27,10 @@ const NavBar = () => {
   return (
     <>
       <div
-        className={`h-[48px] z-20 bg-white flex justify-between items-center border-b border-b-slate-100 px-4 transition-all duration-300 ${
-          headerFixed ? "fixed w-full" : null
-        }`}
+        // className={`h-[48px] z-20 bg-white flex justify-between items-center border-b border-b-slate-100 px-4 transition-all duration-300 ${
+        //   headerFixed ? "fixed w-full" : null
+        // }`}
+        className={`h-[48px] z-20 bg-white flex justify-between items-center border-b border-b-slate-100 px-4 transition-all duration-300 sticky top-0`}
       >
         <div>
           <svg

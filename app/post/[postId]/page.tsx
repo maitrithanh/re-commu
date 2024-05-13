@@ -28,6 +28,16 @@ const DetailPostPage = () => {
 
   return (
     <main className="bg-white ">
+      <div className="w-full lg:hidden flex justify-center">
+        <Image
+          className="w-full"
+          src={"/Thumb.webp"}
+          quality={100}
+          width={1920}
+          height={1080}
+          alt="Thumbnail"
+        />
+      </div>
       <div className="lg:mx-[104px] py-10 px-8 h-full">
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 justify-center items-center max-h-[622px]">
           <div className="flex lg:justify-center justify-start items-center">
@@ -97,7 +107,7 @@ const DetailPostPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full col-span-2 flex justify-center">
+          <div className="w-full col-span-2 lg:flex hidden justify-center">
             <Image
               className="border rounded-md w-full max-w-[788px] max-h-[444px]"
               src={"/Thumb.webp"}
@@ -111,11 +121,11 @@ const DetailPostPage = () => {
       </div>
 
       <div className="px-8 bg-white sticky top-[48px] z-10 shadow-sm ">
-        <div className="lg:mx-[104px] cursor-pointer flex justify-between items-center">
+        <div className="lg:mx-[104px] cursor-pointer lg:flex justify-between items-center">
           <div>
             <div
               className={`pt-2 transition-all ${
-                isTop ? "block opacity-100" : "hidden opacity-0"
+                isTop ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >
               <h1 className="text-2xl font-bold">
@@ -127,7 +137,7 @@ const DetailPostPage = () => {
               <p className="py-2">Bình luận</p>
             </div>
           </div>
-          <div>
+          <div className="py-2">
             <div
               className={`flex gap-2 transition-all duration-300 ${
                 isTop ? "block opacity-100" : "hidden opacity-0"
