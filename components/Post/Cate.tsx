@@ -11,7 +11,7 @@ const Cate: React.FC<CateProps> = ({ nameCate, data }) => {
   return (
     <div className="my-2">
       <p className="font-semibold text-md">{nameCate}</p>
-      <div className="flex md:flex-wrap gap-2 mt-2">
+      <div className="flex flex-wrap gap-2 mt-2">
         {data.map((item: any, index) => {
           return (
             <div key={index}>

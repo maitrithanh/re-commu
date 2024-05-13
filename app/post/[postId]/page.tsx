@@ -1,7 +1,6 @@
 "use client";
 import CardPostRelated from "@/components/Post/CardPostRelated";
 import Cate from "@/components/Post/Cate";
-import Tag from "@/components/Post/Tag";
 import Button from "@/components/utils/Button";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -179,7 +178,7 @@ const DetailPostPage = () => {
               before using this library.
             </div>
             {/* category */}
-            <div className="lg:w-1/6 lg:hidden block w-full pb-2">
+            <div className="max-w-[390px] w-full lg:hidden block pb-2">
               <Cate
                 nameCate="Danh mục"
                 data={[{ name: "Gia dụng" }, { name: "Săn sale" }]}
@@ -192,6 +191,12 @@ const DetailPostPage = () => {
                   { name: "components" },
                   { name: "ios" },
                   { name: "ios 17" },
+                  { name: "Mobile" },
+                  { name: "Mobile" },
+                  { name: "Mobile" },
+                  { name: "Mobile" },
+                  { name: "Mobile" },
+                  { name: "Mobile" },
                   { name: "Mobile" },
                 ]}
               />
@@ -269,6 +274,12 @@ const DetailPostPage = () => {
                 { name: "components" },
                 { name: "ios" },
                 { name: "ios 17" },
+                { name: "Mobile" },
+                { name: "Mobile" },
+                { name: "Mobile" },
+                { name: "Mobile" },
+                { name: "Mobile" },
+                { name: "Mobile" },
                 { name: "Mobile" },
               ]}
             />
