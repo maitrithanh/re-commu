@@ -1,3 +1,62 @@
+### **Review Comunity**
+## **Description**
+
+This is a community website for reviewing anything and everything. Anyone can post reviews (similar to a social media platform for reviews). Each post needs to be approved because all posts can include affiliate links, donation links, etc. (this ensures that posts are clean and not filled with random links). Additionally, users can rate the reviews to indicate whether they are TRUSTWORTHY or not 😀 (this helps improve the quality of the community). Users can also exchange comments under the posts.
+
+If posting reviews is free, how will the website be maintained?
+
+- **Method 1:** We will incorporate image advertisements.
+- **Method 2:** We will accept sponsored posts, which will appear like regular reviews but will be labeled as advertisements (these “advertisement reviews” still need approval but will be pushed to the top for better customer reach ⭐).
+
+### **Why Use This Website?**
+
+Because this website allows everyone to review and evaluate products while being able to INCLUDE AFFILIATE LINKS ⇒ reviews can drive traffic to affiliate links ⇒ **$**
+
+## **Features**
+
+### **User**
+
+- Create review posts (Include affiliate links)
+- Manage profile
+
+### **Admin**
+
+- Manage users
+- Manage review posts
+- Manage comments
+- Manage reports
+- Manage ratings
+
+### **All Roles**
+
+- Register, log in
+- Comment
+- Rate
+- Report
+
+## **Technology**
+
+### **Front-End**
+
+- NextJS
+- Tailwind
+- Shadcn
+- SweetAlert 2
+
+### **Back-End**
+
+- NodeJS ExpressJS
+
+### **Database**
+
+- MongoDB
+
+### **Other**
+
+- Vercel: Deploy Front-End
+- Render: Deploy Back-End
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
