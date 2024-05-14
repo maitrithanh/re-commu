@@ -13,7 +13,9 @@ const Button: React.FC<ButtonProps> = ({ outline, onclick, name, custom }) => {
     <button
       className={`${
         outline ? "border-main border text-main" : "bg-main text-white"
-      } text-sm p-1.5 rounded-md ${custom ? custom : null}`}
+      } text-sm hover:opacity-80 px-4 py-2 p-1.5 rounded-md ${
+        custom ? custom : null
+      }`}
       onClick={() => onclick()}
     >
       {name}

@@ -14,15 +14,20 @@ const CardPost = () => {
         router.push("/post/123");
       }}
     >
-      <div className="relative">
-        <Image
-          className="border rounded-md w-full"
-          src={"/Thumb.webp"}
-          quality={100}
-          width={368}
-          height={218}
-          alt="Thumbnail"
-        />
+      <div className="relative overflow-hidden rounded-md">
+        <div className="w-[368px] h-[218px]">
+          <Image
+            className="border w-full hover:scale-105 transition-transform"
+            src={"/Thumb.webp"}
+            quality={100}
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+            }}
+            alt="Thumbnail"
+          />
+        </div>
         <div className="absolute right-2 bottom-2 invisible group-hover:visible">
           <FcLink size={20} />
         </div>

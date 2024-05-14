@@ -3,15 +3,25 @@ import CardPost from "@/components/Post/CardPost";
 import FilterPost from "@/components/Post/FilterPost";
 import Button from "@/components/utils/Button";
 import Image from "next/image";
+import bannerT from "@/public/banner/bannerT.webp";
 
 export default function Home() {
   return (
     <main>
       <div>
-        <Image src={"/banner/bannerT.webp"} alt="" width={1920} height={1080} />
+        <Image
+          src={bannerT}
+          alt="Hello - Xin Chào"
+          sizes="100vw"
+          // Make the image display full width
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+        />
       </div>
       <div className="lg:mx-[144px]">
-        <div className="grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-4 my-8 p-4">
+        <div className="grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-4  p-4">
           <div className=" bg-[#1bc47d] w-full h-[200px] rounded-xl flex justify-between items-center p-4 group">
             <div>
               <p className="text-xl font-semibold text-white">
