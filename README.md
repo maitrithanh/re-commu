@@ -1,4 +1,4 @@
-### **Review Comunity**
+## **Project: Review Comunity**
 ## **Description**
 
 This is a community website for reviewing anything and everything. Anyone can post reviews (similar to a social media platform for reviews). Each post needs to be approved because all posts can include affiliate links, donation links, etc. (this ensures that posts are clean and not filled with random links). Additionally, users can rate the reviews to indicate whether they are TRUSTWORTHY or not 😀 (this helps improve the quality of the community). Users can also exchange comments under the posts.
