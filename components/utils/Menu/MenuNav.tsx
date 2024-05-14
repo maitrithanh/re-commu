@@ -14,13 +14,13 @@ const MenuNav: React.FC<MenuNavProps> = ({ openMenu }) => {
     <div className={`md:block ${openMenu ? "block " : "hidden"}`}>
       <ul
         className={` ${
-          openMenu ? "block h-screen w-60 bg-white p-8 pt-8 text-lg" : "flex"
+          openMenu ? "block h-screen w-60 bg-white p-8 pt-8 text-xl" : "flex"
         } justify-between items-center gap-12 font-[500] text-[13px] cursor-pointer`}
       >
         {menuNavData?.map((item, index) => {
           return (
             <li
-              className={`hover:scale-110 transition-all hover:font-bold hover:text-main ${
+              className={`hover:scale-110 transition-all hover:font-bold hover:text-main py-2 ${
                 item.link == pathCurr || item.path == pathCurr.split("/")[1]
                   ? "font-bold text-main scale-110"
                   : null
@@ -28,7 +28,16 @@ const MenuNav: React.FC<MenuNavProps> = ({ openMenu }) => {
               key={index}
               onClick={() => router.push(item.link)}
             >
-              {item.title}
+              <span
+                className={`${
+                  (openMenu && item.link == pathCurr) ||
+                  item.path == pathCurr.split("/")[1]
+                    ? "ml-2"
+                    : null
+                } `}
+              >
+                {item.title}
+              </span>
             </li>
           );
         })}

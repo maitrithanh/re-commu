@@ -58,6 +58,7 @@ const DetailPostPage = () => {
       <div className="w-full lg:hidden flex justify-center">
         <Image
           className="w-full"
+          priority
           src={postData.thumbnail}
           quality={100}
           width={1920}
@@ -155,7 +156,9 @@ const DetailPostPage = () => {
               }`}
             >
               {/* title and button action when scroll sticky */}
-              <h1 className="text-2xl font-bold">{postData.title}</h1>
+              <h1 className="text-2xl font-bold whitespace-nowrap overflow-hidden text-ellipsis">
+                {postData.title}
+              </h1>
             </div>
             <div className="flex gap-4 ">
               <Link href={"#infomationSection"}>

@@ -117,14 +117,14 @@ const NavBar = () => {
               <CiMenuFries size={24} />
             </button>
             <div
-              className={`absolute w-screen h-screen right-0 left-0 top-0 z-30 bg-[#0505055d] ${
-                openMenu ? "block " : "hidden"
+              className={`absolute w-screen h-screen transition-all right-0 left-0 top-0 z-30 bg-white ${
+                openMenu ? "translate-x-0 " : "-translate-x-full"
               }`}
               // onClick={() => setOpenMenu((curr) => !curr)}
             >
               <div
-                className={`absolute top-0 transition-all ${
-                  openMenu ? "right-0 " : null
+                className={`absolute top-0 right-0 left-0 transition-all ${
+                  openMenu ? "" : ""
                 }`}
               >
                 <div
@@ -133,7 +133,9 @@ const NavBar = () => {
                 >
                   <IoMdClose size={20} />
                 </div>
-                <MenuNav openMenu={openMenu} />
+                <div onClick={() => setOpenMenu((curr) => !curr)}>
+                  <MenuNav openMenu={openMenu} />
+                </div>
               </div>
             </div>
           </div>

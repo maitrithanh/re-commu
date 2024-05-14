@@ -15,10 +15,11 @@ const CardPostRelated = () => {
       }}
     >
       <div className="relative overflow-hidden rounded-md">
-        <div className="w-[368px] h-[218px]">
+        <div className="relative w-[368px] h-[218px]">
           <Image
             className="border w-full hover:scale-105 transition-transform"
             src={"/Thumb.webp"}
+            priority
             quality={100}
             fill
             sizes="100vw"

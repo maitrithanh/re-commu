@@ -15,11 +15,12 @@ const CardPost = () => {
       }}
     >
       <div className="relative overflow-hidden rounded-md">
-        <div className="w-[368px] h-[218px]">
+        <div className=" w-[368px] h-[214px]">
           <Image
-            className="border w-full hover:scale-105 transition-transform"
+            className="border w-full hover:scale-105 transition-transform h-full"
             src={"/Thumb.webp"}
             quality={100}
+            priority
             fill
             sizes="100vw"
             style={{
@@ -43,7 +44,7 @@ const CardPost = () => {
             />
           </div>
           <div>
-            <p className="font-bold">Tiêu đề bài đăng</p>
+            <h1 className="font-bold">Tiêu đề bài đăng</h1>
             <p className="text-xs text-gray-500">Mai Trí Thành</p>
           </div>
         </div>

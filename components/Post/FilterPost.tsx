@@ -13,7 +13,7 @@ import {
 const FilterPost = () => {
   return (
     <>
-      <div className="bg-white h-16 z-10 p-4 sticky top-[48px]">
+      <div className="bg-white  z-10 sticky top-[48px]">
         <div className="flex justify-between items-center gap-2">
           <Select>
             <SelectTrigger className="w-[180px]">
